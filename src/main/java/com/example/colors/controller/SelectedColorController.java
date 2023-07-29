@@ -40,4 +40,10 @@ public class SelectedColorController {
         model.addAttribute("colors", colors);
         return "select";
     }
+
+    @GetMapping("/")
+    public String showIndex() {
+        return "redirect:select";
+    }
+
 }
